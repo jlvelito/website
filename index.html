@@ -5,14 +5,50 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Luis Velito, Designer &amp; Developer</title>
-    <link rel="stylesheet" href="css/css/normalize.css" />
-    <link rel="stylesheet" href="fonts/fonts.css" />
+    <link rel="stylesheet" href="css/min/normalize.css" />
+    <link rel="stylesheet" href="css/min/iconate.min.css" />
+    <link rel="stylesheet" href="fonts/font.css" />
     <link rel="stylesheet" href="css/min/style.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   </head>
   <body>
     <div class="wrapper">
-      
+      <header>
+        <div class="menu">
+          <div class="menu__icon">
+            <span class="fa fa-bars text-center animated" id="trigger"></span>
+            <span class="menu__icon__background animated centrado"></span>
+          </div>
+          <ul class="menu__lista">
+            <li class="menu__lista__item"><a href="#">Luis Velito</a></li>
+            <li class="menu__lista__item"><a href="#">Currículum</a></li>
+            <li class="menu__lista__item"><a href="#">Laboratorio</a></li>
+            <li class="menu__lista__item"><a href="#">Contacto</a></li>
+          </ul>
+          <h1 class="menu__logo animated">Luis Velito</h1>
+        </div>
+      </header>
+      <div class="fixed">
+        <ul class="slider cycle-slideshow" data-cycle-fx="fade" data-cycle-timeout="5000" data-cycle-slides="> li">
+          <li class="slider__item">
+            <img src="images/sublime.png" alt="Code like a champion bro!" />
+          </li>
+          <li class="slider__item">
+            <img src="images/photoshop.png" alt="Design like an interior architect?" />
+          </li>
+        </ul>
+        <div class="overlay"></div>
+        <div class="triangle"></div>
+      </div>
     </div>
+    <div class="content">
+
+    </div>
+
+<!--javascript plugins-->
+    <script type="text/javascript" src="js/jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="js/jquery.cycle2.min.js"></script>
+    <script type="text/javascript" src="js/min/iconate.min.js"></script>
+    <script type="text/javascript" src="js/min/scripts.js"></script>
   </body>
 </html>

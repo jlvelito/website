@@ -1,1 +1,1 @@
-$(document).ready(function(){});
+$(document).ready(function(){var a=$(window).height();$(window).width();$(window).scroll(function(){var e=$(this).scrollTop();e>=160?$(".menu").addClass("activated"):$(".menu").removeClass("activated"),e>=a-80?$(".menu").addClass("black"):$(".menu").removeClass("black")})});

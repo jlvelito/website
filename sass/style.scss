@@ -3,12 +3,15 @@ $default-transition-property: all;
 $default-transition-duration: 0.4s;
 $default-transition-delay: 0.4s;
 $font-size: 10px;
-$font-family: 'Copernicus';
-$font-heads: 'HUGE Avant Garde';
-$font-color: #000;
-$menu-color: #ec008c;
+$font-family: 'Proxima Nova Rg';
+$font-heads: 'Futura PT Bold';
+$font-buttons: 'Avenir LT 65 Medium';
+$font-headlings: 'Merriweather Light';
+$font-color: #474747;
+$contrast-color: #5bd9b3;
+$contrast-color-2: #ee1c25;
 $white-color: #fff;
-$grey-color: #eeeeee;
+$grey-color: #e5e5e5;
 
 @mixin transition($transition) {
     -moz-transition: $transition;
@@ -38,8 +41,226 @@ $grey-color: #eeeeee;
     transition-delay: $delay;
 }
 
-html{
-	opacity: 0.5;
+
+/* atomos */
+
+ul{
+	list-style: none;
+	padding: 0;
+}
+
+a{
+	color: $contrast-color;
+	text-decoration: none;
 	transition-property: $default-transition-property;
 	transition-duration: $default-transition-duration;
 }
+
+a:hover{
+	color: $contrast-color-2;
+	transition-property: $default-transition-property;
+	transition-duration: $default-transition-duration;
+}
+
+.text-center{
+  text-align: center;
+}
+
+.animated{
+	transition-property: $default-transition-property;
+	transition-duration: $default-transition-duration;
+}
+
+.vertical{
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.centrado{
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+/* fin atomos */
+
+/* layout elements */
+
+html,body{
+	width: 100%;
+	height: 100%;
+}
+
+.wrapper{
+	height: inherit;
+	overflow: visible;
+}
+
+.fixed{
+	position: fixed;
+	height: inherit;
+  width: 100%;
+	overflow: hidden;
+	left: 0; top:0;
+	z-index: 200;
+
+	.overlay{
+		position: absolute;
+		left: 0; top: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 100;
+		background: rgba(0,0,0,0.85);
+	}
+
+	.overlay::after{
+		content: ' ';
+		display: block;
+		position: absolute;
+		top: 48.5%;
+		left: 48.5%;
+		width: 100%;
+		height: 100%;
+		background-color: $white-color;
+    transform: rotate(-45deg);
+	}
+
+	.overlay::before{
+		content: ' ';
+		display: block;
+		position: absolute;
+		top: 48%;
+		left: 48%;
+		width: 100%;
+		height: 100%;
+		background-color: $contrast-color;
+    transform: rotate(-45deg);
+	}
+}
+
+header{
+	position: fixed;
+  z-index: 300;
+  left: 50%; top: 0;
+  width: 90%;
+  transform: translateX(-50%);
+  color: $white-color;
+  overflow: visible;
+  top: 2.5 * $font-size;
+
+  .menu{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 6.6 * $font-size;
+
+    .menu__icon{
+      display: block;
+      position: relative;
+      float: left;
+      height: 8.8 * $font-size;
+      width: 8.8 * $font-size;
+      left: 0; top: 0;
+      overflow: hidden;
+    }
+
+    h1.menu__logo{
+      position: relative;
+      float: left;
+      margin:0 0 0 0px;
+      line-height: 8.8 * $font-size;
+      font-size: 3.2 * $font-size;
+      opacity: 0;
+    }
+
+    span.fa{
+      display: block;
+      position: relative;
+      float: left;
+      font-size: 4 * $font-size;
+      line-height: 8.8 * $font-size;
+      width: 8.8 * $font-size;
+      z-index: 20;
+      color: inherit;
+      left: 0; top: 0;
+      cursor: pointer;
+    }
+
+    span.menu__icon__background{
+      display: block;
+      position: absolute;
+      content: '';
+      width: 0 * $font-size;
+      height: 0 * $font-size;
+      border-radius: 100%;
+      background: $contrast-color;
+      z-index: 10;
+    }
+
+    .menu__lista{
+      position: absolute;
+      left: 0; top: 0;
+      display: none;
+    }
+
+  }
+
+  .menu.activated{
+
+    span.fa{
+      color: $white-color;
+    }
+
+
+    span.menu__icon__background{
+      width: 8.8 * $font-size;
+      height: 8.8 * $font-size;
+    }
+
+    h1.menu__logo{
+      opacity: 1;
+      margin-left: 2.5 * $font-size;
+    }
+  }
+
+  .menu.activated.black{
+    h1{
+      color: $contrast-color;
+    }
+  }
+}
+
+.content{
+  position: relative;
+  top: 100%;
+  height: 200%;
+  overflow: hidden;
+  background: $white-color;
+  z-index: 250;
+  left: 0; top: 0;
+}
+
+.slider{
+	width: 100%;
+	height: inherit;
+	overflow: hidden;
+	position: relative;
+
+	li.slider__item{
+		display: block;
+		width: 100%;
+		height: 100%;
+
+		img{
+			display: block;
+			position: absolute;
+			left: 50%; top: 50%;
+			transform: translate(-50%,-50%);
+			width: 120%;
+			height: auto;
+		}
+	}
+}
+
+/* fin layout elements */
