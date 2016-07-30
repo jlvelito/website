@@ -1,0 +1,45 @@
+
+$default-transition-property: all;
+$default-transition-duration: 0.4s;
+$default-transition-delay: 0.4s;
+$font-size: 10px;
+$font-family: 'Copernicus';
+$font-heads: 'HUGE Avant Garde';
+$font-color: #000;
+$menu-color: #ec008c;
+$white-color: #fff;
+$grey-color: #eeeeee;
+
+@mixin transition($transition) {
+    -moz-transition: $transition;
+    -o-transition: $transition;
+    -webkit-transition: $transition;
+    transition: $transition;
+}
+
+@mixin transition-property($property) {
+    -moz-transition-property: $property;
+    -o-transition-property: $property;
+    -webkit-transition-property: $property;
+    transition-property: $property;
+}
+
+@mixin transition-duration($duration) {
+    -moz-transition-duration: $duration;
+    -o-transition-duration: $duration;
+    -webkit-transition-duration: $duration;
+    transition-duration: $duration;
+}
+
+@mixin transition-delay($delay) {
+    -moz-transition-delay: $delay;
+    -o-transition-delay: $delay;
+    -webkit-transition-delay: $delay;
+    transition-delay: $delay;
+}
+
+html{
+	opacity: 0.5;
+	transition-property: $default-transition-property;
+	transition-duration: $default-transition-duration;
+}

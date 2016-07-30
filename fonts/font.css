@@ -1,0 +1,60 @@
+@font-face {
+  font-family: 'Avenir LT 65 Medium';
+  src: url('a49aa44aaf3ed194f99de42b7f7b3836.eot'); /* IE9 Compat Modes */
+  src: url('a49aa44aaf3ed194f99de42b7f7b3836.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('a49aa44aaf3ed194f99de42b7f7b3836.woff') format('woff'), /* Modern Browsers */
+       url('a49aa44aaf3ed194f99de42b7f7b3836.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('a49aa44aaf3ed194f99de42b7f7b3836.svg#f76e53a266266f1da2c50125ac858283') format('svg'); /* Legacy iOS */
+       
+  font-style:   normal;
+  font-weight:  400;
+}
+
+@font-face {
+  font-family: 'Futura PT Bold';
+  src: url('FuturaPTBold.eot'); /* IE9 Compat Modes */
+  src: url('FuturaPTBold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('FuturaPTBold.woff') format('woff'), /* Modern Browsers */
+       url('FuturaPTBold.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('FuturaPTBold.svg#43b93404d321656514b350462a3f7807') format('svg'); /* Legacy iOS */
+       
+  font-style:   normal;
+  font-weight:  700;
+}
+
+@font-face {
+  font-family: 'Proxima Nova Rg';
+  src: url('Mark Simonson - Proxima Nova Regular.eot'); /* IE9 Compat Modes */
+  src: url('Mark Simonson - Proxima Nova Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('Mark Simonson - Proxima Nova Regular.woff') format('woff'), /* Modern Browsers */
+       url('Mark Simonson - Proxima Nova Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('Mark Simonson - Proxima Nova Regular.svg#2c1459d58560f08b4b0586fbe80aa4cd') format('svg'); /* Legacy iOS */
+       
+  font-style:   normal;
+  font-weight:  400;
+}
+
+@font-face {
+  font-family: 'Merriweather Light';
+  src: url('Merriweather Light.eot'); /* IE9 Compat Modes */
+  src: url('Merriweather Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('Merriweather Light.woff') format('woff'), /* Modern Browsers */
+       url('Merriweather Light.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('Merriweather Light.svg#b6f98031c84bfae5267fe1b71e595e63') format('svg'); /* Legacy iOS */
+       
+  font-style:   normal;
+  font-weight:  200;
+}
+
+@font-face {
+  font-family: 'Merriweather';
+  src: url('Merriweather-Regular.eot'); /* IE9 Compat Modes */
+  src: url('Merriweather-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('Merriweather-Regular.woff') format('woff'), /* Modern Browsers */
+       url('Merriweather-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('Merriweather-Regular.svg#18adc797b789f73d4056c4e4a6cc7d89') format('svg'); /* Legacy iOS */
+       
+  font-style:   normal;
+  font-weight:  400;
+}
+
