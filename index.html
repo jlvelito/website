@@ -10,44 +10,135 @@
     <link rel="stylesheet" href="fonts/font.css" />
     <link rel="stylesheet" href="css/min/style.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript">
+       (function(){
+          emailjs.init("user_Qa6w5UGOoaMnOxjFLwWqL");
+       })();
+    </script>
   </head>
   <body>
     <div class="wrapper">
       <header>
         <div class="menu">
           <div class="menu__icon">
-            <span class="fa fa-bars text-center animated" id="trigger"></span>
+            <span id="fa" class="fa fa-bars text-center animated" id="trigger"></span>
             <span class="menu__icon__background animated centrado"></span>
           </div>
-          <ul class="menu__lista">
-            <li class="menu__lista__item"><a href="#">Luis Velito</a></li>
-            <li class="menu__lista__item"><a href="#">Currículum</a></li>
-            <li class="menu__lista__item"><a href="#">Laboratorio</a></li>
-            <li class="menu__lista__item"><a href="#">Contacto</a></li>
-          </ul>
           <h1 class="menu__logo animated">Luis Velito</h1>
+          <ul class="menu__lista animated">
+            <li class="menu__lista_item animated"><a href="#luis">Luis Velito</a></li>
+            <li class="menu__lista_item animated"><a href="#laboratorio">Laboratorio</a></li>
+            <li class="menu__lista_item animated"><a href="#curriculum">Currículum</a></li>
+            <li class="menu__lista_item animated"><a href="#contacto">Contacto</a></li>
+          </ul>
         </div>
       </header>
       <div class="fixed">
-        <ul class="slider cycle-slideshow" data-cycle-fx="fade" data-cycle-timeout="5000" data-cycle-slides="> li">
-          <li class="slider__item">
-            <img src="images/sublime.png" alt="Code like a champion bro!" />
-          </li>
-          <li class="slider__item">
-            <img src="images/photoshop.png" alt="Design like an interior architect?" />
-          </li>
-        </ul>
         <div class="overlay"></div>
         <div class="triangle"></div>
+        <div class="centrado fixed__content ancho-high">
+          <h2 class="fixed__content__name vertical"><span>Luis Velito</span>
+            <strong>Frontend Dev &amp; Designer asentado en Lima, Perú.</strong>
+          </h2>
+          <p class="fixed__content__link animated">
+            Has scroll para pasar a la siguiente sección <span class="fa fa-angle-down"></span>
+          </p>
+        </div>
       </div>
     </div>
     <div class="content">
+      <div class="section content__blanco" id="luis">
+        <div class="horizontalRow text-center content__padding">
+          <p class="content__big">Únete a mi lucha en pro de combinar el <strong>diseño</strong> con la <strong>programación</strong>.</p>
+          <span class="fa fa-thumbs-o-up linear animated"></span>
+        </div>
+      </div>
+      <div class="section">
+        <div class="horizontalRow content__padding minWidth">
+          <h3 class="content__titles">Conoce algo más acerca de Luis Velito</h3>
+          <h4 class="content__subtitles">¿Quién? ¿Por qué? ¿Cómo?</h4>
+          <p class="content__headling">Luis es un Frontend Developer, que vive en Lima y cuyas increíbles aventuras incluyen cosas como <strong>derrotar a Sigma</strong>
+          escuchar su playlist de <strong>Hype Machine o Deezer</strong> y jugar <strong>Super Smash Bros</strong> (Obviamente con Rockman).</p>
+          <p>
+            Usualmente estoy ocupado con trabajo, o dedicándoe a alguno de mis hobbies, sin embargo, es importante saber que un desarrollador también puede ser una persona
+            con actividades como cualquier otro mortal!! <span class="fa fa-smile-o"></span> conoce un poco más acerca de estas actividades y sobre que me gusta visitando el link a continuación:
+          </p>
+          <a href="acerca.html" class="linkExtern animated">Ver más acerca de mí <span class="fa fa-long-arrow-right animated"></span></a>
+        </div>
+      </div>
+      <div class="content__negro" id="laboratorio">
+        <div class="horizontalRow content__padding minWidth">
+          <h3 class="content__titles white">Vamos a experimentar!</h3>
+          <h4 class="content__subtitles white">Claro, me refiero a investigación, nadie está hablando de drog... estemmm... tampoco de eso...</h4>
+          <ul class="works">
+            <li class="works__item">
+              <a href="#"><img data-src="images/dates.jpg" class="animated" alt="" /></a>
+            </li>
+            <li class="works__item">
+              <a href="#"><img data-src="images/dates.jpg" class="animated" alt="" /></a>
+            </li>
+          </ul>
+          <a href="laboratorio.html" class="linkExtern green animated">Visitar el laboratorio <span class="fa fa-long-arrow-right"></span></a>
+        </div>
+      </div>
+      <div class="section content__blanco" id="curriculum">
+        <div class="horizontalRow text-center content__padding">
+          <p class="content__big">Mi <strong>amplia experiencia en el campo</strong> asegura un trabajo de calidad.</p>
+          <span class="fa fa-flask linear animated"></span>
+        </div>
+      </div>
+      <div class="section">
+        <div class="horizontalRow content__padding minWidth">
+          <h3 class="content__titles">Hablemos de trabajo</h3>
+          <h4 class="content__subtitles">Amplia experiencia en el mercado bro!!</h4>
+          <p class="content__headling">Habiendo trabajado en <strong>casi todos los campos</strong> del espectro creativo además de <strong>para empresas en Europa y USA</strong> puedo decir que
+          mi experiencia es facilmente <strong>comprobable</strong>.</p>
+          <p>
+            De cara a establecer una relación laboral la confianza es un must, para que tengan una mejor impresión de mis cualidades, los invito a revisar mi currículum, además podrán hacerse una mejor idea de mis cualidades y capacidades.
+          </p>
 
+          <a href="curriculum.html" class="linkExtern animated">Ver mi currículum <span class="fa fa-long-arrow-right"></span></a>
+        </div>
+      </div>
+
+      <div class="content__negro" id="Contacto">
+        <div class="horizontalRow content__padding minWidth">
+          <h3 class="content__titles white">Ponte en contacto conmigo!</h3>
+          <h4 class="content__subtitles white">Hey!!! No tan cerca!!!!!</h4>
+          <p class="white-paragraph">
+            Porfavor completa tu nombre, correo y número telefónico (En caso de no desearlo, solo pon cualquier número), y dale al botón de enviar!
+          </p>
+          <p class="alert animated" id="nonombre">
+            <span class="fa fa-close"></span>
+            Hey!!! debes escribir tu nombre bro!!!
+          </p>
+          <p class="alert animated" id="nocorreo">
+            <span class="fa fa-close"></span>
+            Bro!!! a donde te escribo???
+          </p>
+          <p class="alert animated" id="notelefono">
+            <span class="fa fa-close"></span>
+            Hey!!! te aseguro que no te acosaré por whatsapp!!!
+          </p>
+          <p class="alert animated" id="malcorreo">
+            <span class="fa fa-close"></span>
+            Has escrito mal tu correo, que roche tío...
+          </p>
+          <p class="alert animated" id="maltelefono">
+            <span class="fa fa-close"></span>
+            Sólo números porfa! Si no quieres pasarme tu número pon cualquier número nomá...
+          </p>
+          <p class="sending-mail animated" id="visible">
+            Hola! soy <span id="name" contenteditable="true" placeholder="|"></span>  y me gustaría contactarme contigo para un asunto que solo nos interesa a los dos <i class="fa fa-smile-o"></i>. Puedes contactarme a mi correo: <span id="correo" contenteditable="true" placeholder="|" spellcheck="false"></span> o a mi teléfono: <span id="celular" contenteditable="true" placeholder="|"></span> en el momento que lo desees!.
+          </p>
+          <a href="" class="linkExtern green animated" id="sendMail">Enviame un mail <span class="fa fa-long-arrow-right"></span></a>
+        </div>
+      </div>
     </div>
 
 <!--javascript plugins-->
     <script type="text/javascript" src="js/jquery-1.10.2.js"></script>
-    <script type="text/javascript" src="js/jquery.cycle2.min.js"></script>
     <script type="text/javascript" src="js/min/iconate.min.js"></script>
     <script type="text/javascript" src="js/min/scripts.js"></script>
   </body>
